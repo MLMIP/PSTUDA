@@ -1,2 +1,2 @@
 # PSTUDA
-### The code will be open-sourced soon.
+### The code is being organized and will be open-sourced soon.
