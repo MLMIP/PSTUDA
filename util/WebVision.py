@@ -39,7 +39,6 @@ def app(env, start_response):
             a = f.read()
         return [a]
     if Suffix[-3:] == '.py':
-        # html/text为下载文件
         start_response("200 OK", [('Content-Type', 'text/text; charset=utf-8')])
         with open(logDir + env['PATH_INFO'], "rb") as f:
             a = f.read()
