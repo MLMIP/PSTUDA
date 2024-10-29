@@ -3,7 +3,8 @@
 | **[1 Introduction](#introduction)** 
 | **[2 Requirements](#requirements)**
 | **[3 Usage](#usage)**
-| **[4 Citation](#citation)** |
+| **[4 Citation](#citation)**
+  **[5 Acknowledgments](#acknowledgments)** |
 
 <a id="introduction"></a>
 ## Introduction
@@ -56,5 +57,8 @@ If you find our work is useful for your research, please consider citing:
 }
 ```
 
+<a id="acknowledgments"></a>
+
 ## Acknowledgments
+
 Our code is inspired by [StarGAN v2](https://github.com/clovaai/stargan-v2).
