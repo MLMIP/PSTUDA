@@ -55,3 +55,6 @@ If you find our work is useful for your research, please consider citing:
   year={2024}
 }
 ```
+
+## Acknowledgments
+Our code is inspired by [StarGAN v2](https://github.com/clovaai/stargan-v2).
