@@ -67,9 +67,10 @@ dataset/
 
 Description:
 
-The four ```filter_*.txt``` files index specific slice files in the ```data/``` directory, indicating which slices from each case contain target regions. For example:
-Each line in ```filter_t1c_train.txt``` records paths like ```data/case_046/t1c/img/img_slice001.npy```.
-Each line in ```filter_fst2w_train.txt``` stores paths like ```data/case_017/fst2w/img/img_slice004.npy```.
+The four ```filter_*.txt``` files index all slice files from different sequences in the ```data/``` directory (with filter indicating that only slices containing the target region are recorded). 
+For example, each line in ```filter_t1c_train.txt``` records paths like ```data/case_046/t1c/img/img_slice005.npy```, ```data/case_046/t1c/img/img_slice006.npy```, and so on.
+
+Though the private dataset is not publicly available, the provided dataset storage format is intended to support implementation with custom datasets.
 
 ```
 python xxxx.py
