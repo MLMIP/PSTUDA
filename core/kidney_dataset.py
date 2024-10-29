@@ -4,8 +4,8 @@ import numpy as np
 from torch.utils.data import Dataset
 
 
-idx2domain = {'t1c': 0, 't2fs': 1, 't2h': 2, 'dwi': 3, 't1': 4}
-threshold_dict = {'t1c': [-0.7, 8.], 't2fs': [-0.5, 9.], 't2h': [-0.8, 5.], 'dwi': [-0.5, 12.], 't1': [-0.8, 8.]}
+idx2domain = {'t1c': 0, 't2fs': 1, 't2h': 2, 'dwi': 3}
+threshold_dict = {'t1c': [-0.7, 8.], 't2fs': [-0.5, 9.], 't2h': [-0.8, 5.], 'dwi': [-0.5, 12.]}
 
 
 class KidneyDataset(Dataset):
