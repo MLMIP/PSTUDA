@@ -61,4 +61,4 @@ If you find our work is useful for your research, please consider citing:
 
 ## Acknowledgments
 
-Our code is inspired by [StarGAN v2](https://github.com/clovaai/stargan-v2).
+Our code is inspired by [StarGAN v2](https://github.com/clovaai/stargan-v2) and [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
