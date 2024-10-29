@@ -24,8 +24,52 @@ Official code for NeurIPS 2024 paper "[One-to-Multiple: A Progressive Style Tran
 
 ## Usage
 
-### xxxx
-xxxxxxxxxxxxxxxxxx:
+### Dataset Storage Format
+
+The directory structure of our private MSKT dataset is as follows:
+
+```
+dataset/
+├── data/
+│   ├── case_000/
+│   │   ├── t1c/
+│   │   │   ├── img/
+│   │   │   │   ├── img_slice008.npy
+│   │   │   │   ├── img_slice009.npy
+│   │   │   │   └── ...  # other slice files
+│   │   │   ├── label/
+│   │   │   │   ├── label_slice008.npy
+│   │   │   │   ├── label_slice009.npy
+│   │   │   │   └── ...  # other label files
+│   │   ├── fst2w/
+│   │   │   ├── img/
+│   │   │   │   ├── img_slice005.npy
+│   │   │   │   ├── img_slice006.npy
+│   │   │   │   └── ...  # other slice files
+│   │   │   ├── label/
+│   │   │   │   ├── label_slice005.npy
+│   │   │   │   ├── label_slice006.npy
+│   │   │   │   └── ...  # other label files
+│   │   ├── t2w/
+│   │   │   └── ...  # structure is similar to t1c and fst2w
+│   │   ├── dwi/
+│   │   │   └── ...  # structure is similar to t1c and fst2w
+│   ├── case_001/
+│   │   └── ...  # other folder structures are similar
+│   ├── case_002/
+│   │   └── ...
+│   └── ...
+├── filter_t1c_train.txt
+├── filter_fst2w_train.txt
+├── filter_t2w_train.txt
+└── filter_dwi_train.txt
+```
+
+Description:
+
+The four ```filter_*.txt``` files index specific slice files in the ```data/``` directory, indicating which slices from each case contain target regions. For example:
+Each line in ```filter_t1c_train.txt``` records paths like ```data/case_046/t1c/img/img_slice001.npy```.
+Each line in ```filter_fst2w_train.txt``` stores paths like ```data/case_017/fst2w/img/img_slice004.npy```.
 
 ```
 python xxxx.py
