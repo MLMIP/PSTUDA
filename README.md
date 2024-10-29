@@ -9,7 +9,7 @@
 <a id="introduction"></a>
 ## Introduction
 
-This is a PyTorch/GPU implementation of the official code for the NeurIPS 2024 paper "[One-to-Multiple: A Progressive Style Transfer Unsupervised Domain-Adaptive Framework for Kidney Tumor Segmentation]()".
+Official code for NeurIPS 2024 paper "[One-to-Multiple: A Progressive Style Transfer Unsupervised Domain-Adaptive Framework for Kidney Tumor Segmentation]()".
 
 > In multi-sequence Magnetic Resonance Imaging (MRI), accurately segmenting the kidney and tumor using traditional supervised methods requires detailed, labor-intensive annotations for each sequence. Unsupervised Domain Adaptation (UDA) reduces this burden by aligning cross-modal features and addressing inter-domain differences. However, most UDA methods focus on one-to-one domain adaptation, limiting efficiency in multi-target scenarios. To address this challenge, we propose a novel and efficient One-to-Multiple Progressive Style Transfer Unsupervised Domain-Adaptive (PSTUDA) framework.
 
