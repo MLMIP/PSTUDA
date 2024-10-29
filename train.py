@@ -26,16 +26,16 @@ def main(args):
     solver = Trainer(args)
 
     loaders = Munch(train=get_loader_kidney(root=args.train_img_dir,
-                                          data_txt_file=['train_source.txt',      # source
-                                                         'train_target1.txt',     # target
-                                                         'train_target2.txt',      # target
-                                                         'train_target3.txt',],    # target
+                                          data_txt_file=['filter_t1c_train.txt',        # source
+                                                         'filter_t2fs_train.txt',       # target
+                                                         'filter_t2h_train.txt',        # target
+                                                         'filter_dwi_train.txt',],      # target
                                           img_size=args.img_size,
                                           batch_size=args.batch_size,
                                           prob=args.randcrop_prob,
                                           num_workers=args.num_workers),
                     val=get_loader_kidney(root=args.train_img_dir,
-                                          data_txt_file=['val_source.txt',],
+                                          data_txt_file=['test_t1c_slices.txt',],
                                           img_size=args.img_size,
                                           batch_size=args.val_batch_size,
                                           prob=args.randcrop_prob,
