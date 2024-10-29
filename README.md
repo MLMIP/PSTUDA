@@ -4,7 +4,7 @@
 | **[2 Requirements](#requirements)**
 | **[3 Usage](#usage)**
 | **[4 Citation](#citation)**
-  **[5 Acknowledgments](#acknowledgments)** |
+| **[5 Acknowledgments](#acknowledgments)** |
 
 <a id="introduction"></a>
 ## Introduction
