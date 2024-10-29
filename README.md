@@ -19,6 +19,13 @@ Official code for NeurIPS 2024 paper "[One-to-Multiple: A Progressive Style Tran
 <a id="requirements"></a>
 ## Requirements
 
+Clone this repository:
+
+```
+git clone https://github.com/MLMIP/PSTUDA.git
+cd PSTUDA/
+```
+
 `python=3.7`,`torch=1.10.1+cu111`, `accelerate=0.20.3`
 
 <a id="usage"></a>
