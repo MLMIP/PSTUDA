@@ -26,7 +26,11 @@ git clone https://github.com/MLMIP/PSTUDA.git
 cd PSTUDA/
 ```
 
-`python=3.7`,`torch=1.10.1+cu111`, `accelerate=0.20.3`
+Install the dependencies:
+
+conda create -n PSTUDA python=3.6.7
+conda activate PSTUDA
+pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 
 <a id="usage"></a>
 
