@@ -21,14 +21,14 @@ Official code for NeurIPS 2024 paper "[One-to-Multiple: A Progressive Style Tran
 
 Clone this repository:
 
-```
+```bash
 git clone https://github.com/MLMIP/PSTUDA.git
 cd PSTUDA/
 ```
 
 Install the dependencies:
 
-```
+```bash
 conda create -n PSTUDA python=3.7.13
 conda activate PSTUDA
 pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
@@ -93,27 +93,15 @@ Though the private dataset is not publicly available, the provided dataset stora
 If you prepare your custom data following the above storage format, you can start training by executing the following command in the terminal, and the results will be saved in the `output_dir`.
 
 
-```
+```bash
 python train.py [img_size] [num_domains] [input_channel] [train_img_dir] [val_img_dir]
 ```
 
 We provide a simple local visualization script to conveniently view generated results, adversarial loss, and other visualization information during training. By executing the following commands and entering ```http://localhost:1998/``` in your browser, you can access the local visualization interface.
 
-```
+```bash
 cd util
 python WebVision.py
-```
-
-xxxxxxxxxxxxxxxxxx: 
-
-```
-python xxx.py
-python xxx.py
-```
-xxxxxxxxxxxxxxxxxx: 
-```
-python xxx.py
-python xxx.py
 ```
 
 <a id="citation"></a>
