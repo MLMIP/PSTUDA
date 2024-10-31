@@ -28,9 +28,11 @@ cd PSTUDA/
 
 Install the dependencies:
 
-conda create -n PSTUDA python=3.6.7
+```
+conda create -n PSTUDA python=3.7.13
 conda activate PSTUDA
 pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
 <a id="usage"></a>
 
