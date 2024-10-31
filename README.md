@@ -76,18 +76,32 @@ dataset/
 ├── filter_t1c_train.txt
 ├── filter_fst2w_train.txt
 ├── filter_t2w_train.txt
-└── filter_dwi_train.txt
+├── filter_dwi_train.txt
+└── test_t1c_slices.txt
 ```
 
 Description:
 
 The four `filter_*.txt` files index all slice files from different sequences in the `data/` directory (with filter indicating that only slices containing the target region are recorded). 
+The `test_*_slices.txt` files index all slices in the source domain test set within the `data/` directory.
 For example, each line in `filter_t1c_train.txt` records paths like `data/case_046/t1c/img/img_slice005.npy`, `data/case_046/t1c/img/img_slice006.npy`, and so on.
 
 Though the private dataset is not publicly available, the provided dataset storage format is intended to support implementation with custom datasets.
 
+### Running PSTUDA
+
+If you prepare your custom data following the above storage format, you can start training by executing the following command in the terminal, and the results will be saved in the `output_dir`.
+
+
 ```
-python xxxx.py
+python train.py [img_size] [num_domains] [input_channel] [train_img_dir] [val_img_dir]
+```
+
+We provide a simple local visualization script to conveniently view generated results, adversarial loss, and other visualization information during training. By executing the following commands and entering ```http://localhost:1998/``` in your browser, you can access the local visualization interface.
+
+```
+cd util
+python WebVision.py
 ```
 
 xxxxxxxxxxxxxxxxxx: 
