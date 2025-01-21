@@ -113,9 +113,8 @@ If you find our work is useful for your research, please consider citing:
 ```
 @article{hu2024one,
   title={One-to-Multiple: A Progressive Style Transfer Unsupervised Domain-Adaptive Framework for Kidney Tumor Segmentation},
-  author={Hu, Kai and Li, Jinhao and Zhang, Yuan and Ye, Xiongjun and Gao, Xieping}
+  author={Hu, Kai and Li, Jinhao and Zhang, Yuan and Ye, Xiongjun and Gao, Xieping},
   journal={Advances in Neural Information Processing Systems},
-  volume={},
   year={2024}
 }
 ```
